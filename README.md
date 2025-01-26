@@ -58,6 +58,7 @@ nodemon app.js
 <div align="center">
     <img src="基于Nodejs-vue3-uniapp的微信小程序全栈开发配置帖/01.png">
 </div>
+![01](基于Nodejs-vue3-uniapp的微信小程序全栈开发配置帖/01.png)
 
 
 
@@ -72,7 +73,7 @@ nodemon app.js
     <img src="基于Nodejs-vue3-uniapp的微信小程序全栈开发配置帖/02.png">
 </div>
 
-
+![01](基于Nodejs-vue3-uniapp的微信小程序全栈开发配置帖/02.png)
 
 #### 跨端启动-HBuilderX
 
@@ -83,13 +84,13 @@ nodemon app.js
 <div align="center">
     <img src="基于Nodejs-vue3-uniapp的微信小程序全栈开发配置帖/03.png">
 </div>
-
+![03](基于Nodejs-vue3-uniapp的微信小程序全栈开发配置帖/03.png)
 
 <div align="center">
     <img src="基于Nodejs-vue3-uniapp的微信小程序全栈开发配置帖/04.png">
 </div>
 
-
+![04](基于Nodejs-vue3-uniapp的微信小程序全栈开发配置帖/04.png)
 
 项目最终在微信开发者工具中呈现。
 
@@ -101,13 +102,13 @@ nodemon app.js
     <img src="基于Nodejs-vue3-uniapp的微信小程序全栈开发配置帖/05.png">
 </div>
 
-
+![05](基于Nodejs-vue3-uniapp的微信小程序全栈开发配置帖/05.png)
 
 
 <div align="center">
     <img src="基于Nodejs-vue3-uniapp的微信小程序全栈开发配置帖/06.png">
 </div>
 
-
+![06](基于Nodejs-vue3-uniapp的微信小程序全栈开发配置帖/06.png)
 
 
