@@ -1,0 +1,34 @@
+.user-message.data-v-235f4245 {
+  background-color: #20C57D;
+  border-radius: 4rpx;
+  color: #fff;
+  padding: 15rpx;
+  margin: 30rpx 20rpx 0 20rpx;
+  display: inline-block;
+}
+.zhipu-message.data-v-235f4245 {
+  background-color: #ffffff;
+  border-radius: 4rpx;
+  color: #333;
+  padding: 15rpx;
+  margin: 30rpx 20rpx 0 20rpx;
+}
+.zhipu-message .recommend-tips.data-v-235f4245 {
+  background-color: #F3F3F3;
+  border-radius: 10rpx;
+  margin: 20rpx 0;
+  padding: 15rpx;
+  font-weight: bold;
+}
+.zhipu-message .recommend-content.data-v-235f4245 {
+  background-color: #F3F3F3;
+  border-radius: 10rpx;
+  padding: 15rpx;
+}
+.zhipu-message .recommend-content .recommend-item.data-v-235f4245 {
+  margin-bottom: 15rpx;
+  color: #006C45;
+}
+.zhipu-message .recommend-content .recommend-item.data-v-235f4245:last-child {
+  margin-bottom: 0;
+}

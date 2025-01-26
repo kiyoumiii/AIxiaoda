@@ -1,0 +1,22 @@
+[2024-08-09T01:43:17.918] [ERROR] error - {
+  msg: '获取code出错',
+  code: 400,
+  error: {
+    errcode: 40029,
+    errmsg: 'invalid code, rid: 66b503b4-0dbc122f-58a7d1a5'
+  }
+}
+[2024-08-09T03:39:14.881] [ERROR] error - { msg: '没有登陆,没有访问权限', code: 401 }
+[2024-08-09T03:43:40.919] [ERROR] error - { msg: '没有访问权限', code: 401 }
+[2024-08-09T04:25:29.995] [ERROR] error - { msg: '没有登陆,没有访问权限', code: 401 }
+[2024-08-09T06:09:57.409] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'ctx')
+    at fetchChatHistory (E:\AIGC课程\AIGC-NODE\controller\chathistory.js:53:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async authority (E:\AIGC课程\AIGC-NODE\config\auth.js:21:3)
+    at async E:\AIGC课程\AIGC-NODE\app.js:30:3
+    at async errorHandler (E:\AIGC课程\AIGC-NODE\config\errorhandler.js:5:5)
+    at async responseHandler (E:\AIGC课程\AIGC-NODE\config\result.js:12:3)
+    at async cors (E:\AIGC课程\AIGC-NODE\node_modules\@koa\cors\index.js:109:16)
+    at async bodyParser (E:\AIGC课程\AIGC-NODE\node_modules\koa-bodyparser\index.js:78:5)
+[2024-08-09T06:46:45.082] [ERROR] error - { msg: 'sessionId字段必填', code: 400 }
+[2024-08-09T06:47:22.147] [ERROR] error - { msg: 'sessionId字段必填', code: 400 }

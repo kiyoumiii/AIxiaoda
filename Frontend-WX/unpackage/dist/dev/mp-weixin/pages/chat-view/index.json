@@ -1,0 +1,11 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "start-page-vue": "./component/start-page",
+    "chat-area-vue": "./component/chat-area",
+    "ai-drawing-vue": "./component/ai-drawing",
+    "input-box-vue": "./component/input-box",
+    "personal-center": "../personal-center/index",
+    "login-page": "../login-page/index"
+  }
+}

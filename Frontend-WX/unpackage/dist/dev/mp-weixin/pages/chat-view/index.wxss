@@ -1,0 +1,34 @@
+page {
+  background-color: #F3F3F3;
+}
+.menu-view {
+  height: var(--152d0a4f);
+  background: linear-gradient(#FCE7CC, #F3F3F3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+.menu-view .button-top {
+  height: var(--8ad40950);
+}
+.menu-view .menu-style {
+  display: flex;
+  align-items: center;
+  height: var(--1e837444);
+  padding-left: 20rpx;
+}
+.menu-view .menu-style .select-menu {
+  color: #333 !important;
+}
+.menu-view .menu-style text {
+  color: #9D9486;
+  font-weight: bold;
+}
+.menu-view .menu-style text:nth-child(2) {
+  padding: 0 60rpx;
+}
+.ment-view-height {
+  height: var(--152d0a4f);
+}

@@ -1,0 +1,2 @@
+[2024-08-08T01:42:03.994] [ERROR] error - { msg: '请输入图像的文本描述', code: 422 }
+[2024-08-08T01:42:15.734] [ERROR] error - { error: { code: '1214', message: 'prompt:输入不能为空' } }

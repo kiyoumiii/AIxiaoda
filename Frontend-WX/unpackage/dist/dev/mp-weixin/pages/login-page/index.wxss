@@ -1,0 +1,41 @@
+.login-page.data-v-3300ff66 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 9999;
+}
+.login-page .login-image.data-v-3300ff66 {
+  width: 100%;
+  margin-top: 110rpx;
+}
+.login-page .login-tips.data-v-3300ff66 {
+  font-weight: bold;
+  padding: 40rpx 20rpx;
+}
+.login-page .login-view.data-v-3300ff66 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-page .login-view #avatar-button.data-v-3300ff66,
+.login-page .login-view .avatar.data-v-3300ff66 {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.login-page .login-view .form-submit.data-v-3300ff66 {
+  width: 100%;
+}
+.login-page .login-view .form-submit .weui-input.data-v-3300ff66 {
+  padding: 20rpx;
+  margin: 20rpx;
+  border-bottom: 1rpx solid #f2f2f2;
+}
+.login-page .login-view .form-submit .submit-button.data-v-3300ff66 {
+  background: linear-gradient(to right, #A2C5FE, #C0E7FD);
+  padding: 15rpx 0;
+  margin: 55rpx 20rpx 0 20rpx;
+}

@@ -1,0 +1,33 @@
+.circle-container.data-v-87643616 {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 0;
+}
+.circle-container .circle.data-v-87643616 {
+  width: 18rpx;
+  height: 18rpx;
+  border-radius: 50rpx;
+  background-color: #777A8D;
+  margin-right: 10rpx;
+  animation: colorChange-87643616 1s linear infinite;
+}
+@keyframes colorChange-87643616 {
+0% {
+    background-color: #ffcc00;
+}
+66.67% {
+    background-color: #ffcc00;
+}
+33.33% {
+    background-color: #ffcc00;
+}
+}
+.circle-container .circle.data-v-87643616:nth-child(1) {
+  animation-delay: 0s;
+}
+.circle-container .circle.data-v-87643616:nth-child(2) {
+  animation-delay: 0.33s;
+}
+.circle-container .circle.data-v-87643616:nth-child(3) {
+  animation-delay: 0.67s;
+}

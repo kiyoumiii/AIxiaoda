@@ -1,0 +1,103 @@
+.input-box-area.data-v-4cc5f350 {
+  background-color: #F8F8F8;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: var(--296f6731);
+  padding-bottom: 68rpx;
+  padding-top: 20rpx;
+}
+.input-box-area image.data-v-4cc5f350 {
+  width: 47rpx;
+  margin: 0 20rpx;
+}
+.input-box-area .input-content.data-v-4cc5f350 {
+  background-color: #ffffff;
+  flex: 1;
+  width: 100%;
+  border-radius: 15rpx;
+  padding: 10rpx;
+}
+.input-box-area .input-content .textarea-box.data-v-4cc5f350 {
+  width: 100%;
+  height: var(--5577b0c6);
+}
+.input-box-area .speech-sound.data-v-4cc5f350 {
+  flex: 1;
+  background: linear-gradient(to right, #A2C5FE, #C0E7FD);
+  text-align: center;
+  border-radius: 15rpx;
+  color: #fff;
+  height: var(--02961b40);
+  line-height: var(--02961b40);
+}
+.mask-view.data-v-4cc5f350 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10000;
+}
+.record-text.data-v-4cc5f350 {
+  position: fixed;
+  bottom: 500rpx;
+  left: 10rpx;
+  right: 10rpx;
+  color: #ffffff;
+  height: 300rpx;
+  line-height: 1.4;
+  overflow: auto;
+  padding: 10rpx;
+  z-index: 10000;
+}
+.recording-pop-up.data-v-4cc5f350 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, #07D280, #16CBDC);
+  height: 500rpx;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recording-pop-up .release.data-v-4cc5f350 {
+  color: #ffffff;
+  font-size: 33rpx;
+  padding: 30rpx 0;
+  font-weight: bold;
+}
+.recording-pop-up .in-recognition.data-v-4cc5f350 {
+  color: #ffffff;
+  font-size: 40rpx;
+  padding: 30rpx 0;
+  font-weight: bold;
+}
+.recording-pop-up .audio-wave.data-v-4cc5f350 {
+  padding-top: 50rpx;
+}
+.recording-pop-up .audio-wave .audio-wave-text.data-v-4cc5f350 {
+  background-color: #ffffff;
+  width: 7rpx;
+  height: 10rpx;
+  margin: 0 5rpx;
+  border-radius: 5rpx;
+  display: inline-block;
+  border: none;
+  animation: wave-4cc5f350 0.2s ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes wave-4cc5f350 {
+from {
+    transform: scaleY(1);
+}
+to {
+    transform: scaleY(4);
+}
+}

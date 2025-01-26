@@ -1,0 +1,342 @@
+[2024-08-06T01:50:03.678] [ERROR] error - { msg: '请填写姓名', code: 422 }
+[2024-08-06T01:50:15.874] [ERROR] error - { msg: 'name必须是字符串类型', code: 400 }
+[2024-08-06T01:50:42.999] [ERROR] error - { msg: 'name字段必须是字符串类型', code: 400 }
+[2024-08-06T01:51:01.096] [ERROR] error - { msg: 'name字段必须是字符串类型', code: 400 }
+[2024-08-06T01:52:26.548] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'trim')
+    at Validate.nullCheck (E:\AIGC课程\AIGC-NODE\validate\index.js:4:13)
+    at wxLogin (E:\AIGC课程\AIGC-NODE\controller\user.js:7:20)
+    at dispatch (E:\AIGC课程\AIGC-NODE\node_modules\koa-compose\index.js:42:32)
+    at E:\AIGC课程\AIGC-NODE\node_modules\@koa\router\lib\router.js:423:16
+    at dispatch (E:\AIGC课程\AIGC-NODE\node_modules\koa-compose\index.js:42:32)
+    at E:\AIGC课程\AIGC-NODE\node_modules\koa-compose\index.js:34:12
+    at dispatch (E:\AIGC课程\AIGC-NODE\node_modules\@koa\router\lib\router.js:428:31)
+    at dispatch (E:\AIGC课程\AIGC-NODE\node_modules\koa-compose\index.js:42:32)
+    at errorHandler (E:\AIGC课程\AIGC-NODE\config\errorhandler.js:5:11)
+    at dispatch (E:\AIGC课程\AIGC-NODE\node_modules\koa-compose\index.js:42:32)
+[2024-08-06T01:52:44.678] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'trim')
+    at Validate.nullCheck (E:\AIGC课程\AIGC-NODE\validate\index.js:4:13)
+    at wxLogin (E:\AIGC课程\AIGC-NODE\controller\user.js:7:20)
+    at dispatch (E:\AIGC课程\AIGC-NODE\node_modules\koa-compose\index.js:42:32)
+    at E:\AIGC课程\AIGC-NODE\node_modules\@koa\router\lib\router.js:423:16
+    at dispatch (E:\AIGC课程\AIGC-NODE\node_modules\koa-compose\index.js:42:32)
+    at E:\AIGC课程\AIGC-NODE\node_modules\koa-compose\index.js:34:12
+    at dispatch (E:\AIGC课程\AIGC-NODE\node_modules\@koa\router\lib\router.js:428:31)
+    at dispatch (E:\AIGC课程\AIGC-NODE\node_modules\koa-compose\index.js:42:32)
+    at errorHandler (E:\AIGC课程\AIGC-NODE\config\errorhandler.js:5:11)
+    at dispatch (E:\AIGC课程\AIGC-NODE\node_modules\koa-compose\index.js:42:32)
+[2024-08-06T01:55:23.167] [ERROR] error - { msg: 'name字段必填', code: 400 }
+[2024-08-06T01:55:46.112] [ERROR] error - { msg: 'name字段必填', code: 400 }
+[2024-08-06T01:55:57.502] [ERROR] error - { msg: 'age字段必填', code: 400 }
+[2024-08-06T01:56:04.105] [ERROR] error - { msg: '请填写年龄', code: 422 }
+[2024-08-06T01:59:24.862] [ERROR] error - { msg: 'age字段必填', code: 400 }
+[2024-08-06T04:58:08.239] [ERROR] error - Error
+    at Query.run (E:\AIGC课程\AIGC-NODE\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at E:\AIGC课程\AIGC-NODE\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (E:\AIGC课程\AIGC-NODE\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (E:\AIGC课程\AIGC-NODE\node_modules\sequelize\lib\model.js:2490:35)
+    at async user-info.create (E:\AIGC课程\AIGC-NODE\node_modules\sequelize\lib\model.js:1362:12)
+    at async wxLogin (E:\AIGC课程\AIGC-NODE\controller\user.js:12:5)
+    at async errorHandler (E:\AIGC课程\AIGC-NODE\config\errorhandler.js:5:5)
+    at async responseHandler (E:\AIGC课程\AIGC-NODE\config\result.js:12:3)
+    at async cors (E:\AIGC课程\AIGC-NODE\node_modules\@koa\cors\index.js:109:16) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Field 'createdAt' doesn't have a default value
+      at Packet.asError (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\packets\packet.js:738:17)
+      at Execute.execute (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_NO_DEFAULT_FOR_FIELD',
+    errno: 1364,
+    sqlState: 'HY000',
+    sqlMessage: "Field 'createdAt' doesn't have a default value",
+    sql: 'INSERT INTO `user-info` (`nickName`,`avatar`,`openid`) VALUES (?,?,?);',
+    parameters: [ '张三', 'https://dhdhhd.jpg', 'dhdfghfyry54712' ]
+  },
+  original: Error: Field 'createdAt' doesn't have a default value
+      at Packet.asError (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\packets\packet.js:738:17)
+      at Execute.execute (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_NO_DEFAULT_FOR_FIELD',
+    errno: 1364,
+    sqlState: 'HY000',
+    sqlMessage: "Field 'createdAt' doesn't have a default value",
+    sql: 'INSERT INTO `user-info` (`nickName`,`avatar`,`openid`) VALUES (?,?,?);',
+    parameters: [ '张三', 'https://dhdhhd.jpg', 'dhdfghfyry54712' ]
+  },
+  sql: 'INSERT INTO `user-info` (`nickName`,`avatar`,`openid`) VALUES (?,?,?);',
+  parameters: [ '张三', 'https://dhdhhd.jpg', 'dhdfghfyry54712' ]
+}
+[2024-08-06T04:59:56.376] [ERROR] error - Error
+    at Query.run (E:\AIGC课程\AIGC-NODE\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at E:\AIGC课程\AIGC-NODE\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (E:\AIGC课程\AIGC-NODE\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (E:\AIGC课程\AIGC-NODE\node_modules\sequelize\lib\model.js:2490:35)
+    at async user-info.create (E:\AIGC课程\AIGC-NODE\node_modules\sequelize\lib\model.js:1362:12)
+    at async wxLogin (E:\AIGC课程\AIGC-NODE\controller\user.js:12:5)
+    at async errorHandler (E:\AIGC课程\AIGC-NODE\config\errorhandler.js:5:5)
+    at async responseHandler (E:\AIGC课程\AIGC-NODE\config\result.js:12:3)
+    at async cors (E:\AIGC课程\AIGC-NODE\node_modules\@koa\cors\index.js:109:16) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Table 'aigc-node.user-info' doesn't exist
+      at Packet.asError (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\packets\packet.js:738:17)
+      at Prepare.execute (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'aigc-node.user-info' doesn't exist",
+    sql: 'INSERT INTO `user-info` (`nickName`,`avatar`,`openid`) VALUES (?,?,?);',
+    parameters: [ '张三', 'https://dhdhhd.jpg', 'dhdfghfyry54712' ]
+  },
+  original: Error: Table 'aigc-node.user-info' doesn't exist
+      at Packet.asError (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\packets\packet.js:738:17)
+      at Prepare.execute (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'aigc-node.user-info' doesn't exist",
+    sql: 'INSERT INTO `user-info` (`nickName`,`avatar`,`openid`) VALUES (?,?,?);',
+    parameters: [ '张三', 'https://dhdhhd.jpg', 'dhdfghfyry54712' ]
+  },
+  sql: 'INSERT INTO `user-info` (`nickName`,`avatar`,`openid`) VALUES (?,?,?);',
+  parameters: [ '张三', 'https://dhdhhd.jpg', 'dhdfghfyry54712' ]
+}
+[2024-08-06T05:00:32.156] [ERROR] error - Error
+    at Query.run (E:\AIGC课程\AIGC-NODE\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at E:\AIGC课程\AIGC-NODE\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (E:\AIGC课程\AIGC-NODE\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (E:\AIGC课程\AIGC-NODE\node_modules\sequelize\lib\model.js:2490:35)
+    at async user-info.create (E:\AIGC课程\AIGC-NODE\node_modules\sequelize\lib\model.js:1362:12)
+    at async wxLogin (E:\AIGC课程\AIGC-NODE\controller\user.js:12:5)
+    at async errorHandler (E:\AIGC课程\AIGC-NODE\config\errorhandler.js:5:5)
+    at async responseHandler (E:\AIGC课程\AIGC-NODE\config\result.js:12:3)
+    at async cors (E:\AIGC课程\AIGC-NODE\node_modules\@koa\cors\index.js:109:16) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Table 'aigc-node.user-info' doesn't exist
+      at Packet.asError (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\packets\packet.js:738:17)
+      at Prepare.execute (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'aigc-node.user-info' doesn't exist",
+    sql: 'INSERT INTO `user-info` (`nickName`,`avatar`,`openid`) VALUES (?,?,?);',
+    parameters: [ '张三', 'https://dhdhhd.jpg', 'dhdfghfyry54712' ]
+  },
+  original: Error: Table 'aigc-node.user-info' doesn't exist
+      at Packet.asError (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\packets\packet.js:738:17)
+      at Prepare.execute (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'aigc-node.user-info' doesn't exist",
+    sql: 'INSERT INTO `user-info` (`nickName`,`avatar`,`openid`) VALUES (?,?,?);',
+    parameters: [ '张三', 'https://dhdhhd.jpg', 'dhdfghfyry54712' ]
+  },
+  sql: 'INSERT INTO `user-info` (`nickName`,`avatar`,`openid`) VALUES (?,?,?);',
+  parameters: [ '张三', 'https://dhdhhd.jpg', 'dhdfghfyry54712' ]
+}
+[2024-08-06T05:00:33.340] [ERROR] error - Error
+    at Query.run (E:\AIGC课程\AIGC-NODE\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at E:\AIGC课程\AIGC-NODE\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (E:\AIGC课程\AIGC-NODE\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (E:\AIGC课程\AIGC-NODE\node_modules\sequelize\lib\model.js:2490:35)
+    at async user-info.create (E:\AIGC课程\AIGC-NODE\node_modules\sequelize\lib\model.js:1362:12)
+    at async wxLogin (E:\AIGC课程\AIGC-NODE\controller\user.js:12:5)
+    at async errorHandler (E:\AIGC课程\AIGC-NODE\config\errorhandler.js:5:5)
+    at async responseHandler (E:\AIGC课程\AIGC-NODE\config\result.js:12:3)
+    at async cors (E:\AIGC课程\AIGC-NODE\node_modules\@koa\cors\index.js:109:16) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Table 'aigc-node.user-info' doesn't exist
+      at Packet.asError (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\packets\packet.js:738:17)
+      at Prepare.execute (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'aigc-node.user-info' doesn't exist",
+    sql: 'INSERT INTO `user-info` (`nickName`,`avatar`,`openid`) VALUES (?,?,?);',
+    parameters: [ '张三', 'https://dhdhhd.jpg', 'dhdfghfyry54712' ]
+  },
+  original: Error: Table 'aigc-node.user-info' doesn't exist
+      at Packet.asError (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\packets\packet.js:738:17)
+      at Prepare.execute (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'aigc-node.user-info' doesn't exist",
+    sql: 'INSERT INTO `user-info` (`nickName`,`avatar`,`openid`) VALUES (?,?,?);',
+    parameters: [ '张三', 'https://dhdhhd.jpg', 'dhdfghfyry54712' ]
+  },
+  sql: 'INSERT INTO `user-info` (`nickName`,`avatar`,`openid`) VALUES (?,?,?);',
+  parameters: [ '张三', 'https://dhdhhd.jpg', 'dhdfghfyry54712' ]
+}
+[2024-08-06T05:32:11.359] [ERROR] error - Error
+    at Query.run (E:\AIGC课程\AIGC-NODE\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at E:\AIGC课程\AIGC-NODE\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (E:\AIGC课程\AIGC-NODE\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (E:\AIGC课程\AIGC-NODE\node_modules\sequelize\lib\model.js:2490:35)
+    at async user-info.create (E:\AIGC课程\AIGC-NODE\node_modules\sequelize\lib\model.js:1362:12)
+    at async wxLogin (E:\AIGC课程\AIGC-NODE\controller\user.js:12:5)
+    at async errorHandler (E:\AIGC课程\AIGC-NODE\config\errorhandler.js:5:5)
+    at async responseHandler (E:\AIGC课程\AIGC-NODE\config\result.js:12:3)
+    at async cors (E:\AIGC课程\AIGC-NODE\node_modules\@koa\cors\index.js:109:16) {
+  name: 'SequelizeUniqueConstraintError',
+  errors: [
+    ValidationErrorItem {
+      message: 'PRIMARY must be unique',
+      type: 'unique violation',
+      path: 'PRIMARY',
+      value: 'dhdfghfyry54712',
+      origin: 'DB',
+      instance: [user-info],
+      validatorKey: 'not_unique',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ],
+  parent: Error: Duplicate entry 'dhdfghfyry54712' for key 'user-info.PRIMARY'
+      at Packet.asError (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\packets\packet.js:738:17)
+      at Execute.execute (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_DUP_ENTRY',
+    errno: 1062,
+    sqlState: '23000',
+    sqlMessage: "Duplicate entry 'dhdfghfyry54712' for key 'user-info.PRIMARY'",
+    sql: 'INSERT INTO `user-info` (`nickName`,`avatar`,`openid`,`createTime`) VALUES (?,?,?,?);',
+    parameters: [
+      '张三',
+      'https://dhdhhd.jpg',
+      'dhdfghfyry54712',
+      '2024-08-06: 05:31:26'
+    ]
+  },
+  original: Error: Duplicate entry 'dhdfghfyry54712' for key 'user-info.PRIMARY'
+      at Packet.asError (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\packets\packet.js:738:17)
+      at Execute.execute (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (E:\AIGC课程\AIGC-NODE\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_DUP_ENTRY',
+    errno: 1062,
+    sqlState: '23000',
+    sqlMessage: "Duplicate entry 'dhdfghfyry54712' for key 'user-info.PRIMARY'",
+    sql: 'INSERT INTO `user-info` (`nickName`,`avatar`,`openid`,`createTime`) VALUES (?,?,?,?);',
+    parameters: [
+      '张三',
+      'https://dhdhhd.jpg',
+      'dhdfghfyry54712',
+      '2024-08-06: 05:31:26'
+    ]
+  },
+  fields: { PRIMARY: 'dhdfghfyry54712' },
+  sql: 'INSERT INTO `user-info` (`nickName`,`avatar`,`openid`,`createTime`) VALUES (?,?,?,?);'
+}
+[2024-08-06T06:07:48.311] [ERROR] error - {
+  msg: '获取code出错',
+  code: 400,
+  error: {
+    errcode: 40163,
+    errmsg: 'code been used, rid: 66b14d33-5e1ac9f4-55c8f0ac'
+  }
+}
+[2024-08-06T06:09:06.936] [ERROR] error - { msg: '请上传头像', code: 422 }
+[2024-08-06T06:09:16.080] [ERROR] error - {
+  msg: '获取code出错',
+  code: 400,
+  error: {
+    errcode: 40163,
+    errmsg: 'code been used, rid: 66b14d8b-7725a70b-6f3ebb57'
+  }
+}
+[2024-08-06T06:12:58.110] [ERROR] error - {
+  msg: '获取code出错',
+  code: 400,
+  error: {
+    errcode: 40163,
+    errmsg: 'code been used, rid: 66b14e69-1972ce9c-7ae0b3ff'
+  }
+}
+[2024-08-06T06:18:27.267] [ERROR] error - {
+  msg: '获取code出错',
+  code: 400,
+  error: {
+    errcode: 40163,
+    errmsg: 'code been used, rid: 66b14fb2-19cf9cb9-03261bc5'
+  }
+}

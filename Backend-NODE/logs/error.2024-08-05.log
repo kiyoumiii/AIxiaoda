@@ -1,0 +1,24 @@
+[2024-08-05T06:33:55.873] [ERROR] error - 错误
+[2024-08-05T06:34:21.336] [ERROR] error - ReferenceError: abcd is not defined
+    at wxLogin (E:\AIGC课程\AIGC-NODE\controller\user.js:7:5)
+    at dispatch (E:\AIGC课程\AIGC-NODE\node_modules\koa-compose\index.js:42:32)
+    at E:\AIGC课程\AIGC-NODE\node_modules\@koa\router\lib\router.js:423:16
+    at dispatch (E:\AIGC课程\AIGC-NODE\node_modules\koa-compose\index.js:42:32)
+    at E:\AIGC课程\AIGC-NODE\node_modules\koa-compose\index.js:34:12
+    at dispatch (E:\AIGC课程\AIGC-NODE\node_modules\@koa\router\lib\router.js:428:31)
+    at dispatch (E:\AIGC课程\AIGC-NODE\node_modules\koa-compose\index.js:42:32)
+    at errorHandler (E:\AIGC课程\AIGC-NODE\config\errorhandler.js:5:11)
+    at dispatch (E:\AIGC课程\AIGC-NODE\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (E:\AIGC课程\AIGC-NODE\config\result.js:12:9)
+[2024-08-05T07:12:01.529] [ERROR] error - 搓搓
+[2024-08-05T07:12:20.221] [ERROR] error - TypeError: Expected a string but received a undefined
+    at assertString (E:\AIGC课程\AIGC-NODE\node_modules\validator\lib\util\assertString.js:13:11)
+    at Object.isEmpty (E:\AIGC课程\AIGC-NODE\node_modules\validator\lib\isEmpty.js:14:29)
+    at Validation (E:\AIGC课程\AIGC-NODE\validate\index.js:4:17)
+    at dispatch (E:\AIGC课程\AIGC-NODE\node_modules\koa-compose\index.js:42:32)
+    at E:\AIGC课程\AIGC-NODE\node_modules\@koa\router\lib\router.js:423:16
+    at dispatch (E:\AIGC课程\AIGC-NODE\node_modules\koa-compose\index.js:42:32)
+    at E:\AIGC课程\AIGC-NODE\node_modules\koa-compose\index.js:34:12
+    at dispatch (E:\AIGC课程\AIGC-NODE\node_modules\@koa\router\lib\router.js:428:31)
+    at dispatch (E:\AIGC课程\AIGC-NODE\node_modules\koa-compose\index.js:42:32)
+    at errorHandler (E:\AIGC课程\AIGC-NODE\config\errorhandler.js:5:11)

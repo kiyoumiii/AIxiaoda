@@ -1,0 +1,13 @@
+{
+  "Node.js Service": {
+    "prefix": "koaser",
+    "body": [
+      "class ${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}Service{",
+      "	$1",
+      "}",
+      "",
+      "module.exports = ${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}Service;"
+    ],
+    "description": "Node.js Service"
+  }
+}

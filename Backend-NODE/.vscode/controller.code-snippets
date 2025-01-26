@@ -1,0 +1,13 @@
+{
+  "Node.js Controller": {
+    "prefix": "koacont",
+    "body": [
+      "class ${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}Controller{",
+      "	$1",
+      "}",
+      "",
+      "module.exports = new ${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}Controller();"
+    ],
+    "description": "Node.js Controller"
+  }
+}
