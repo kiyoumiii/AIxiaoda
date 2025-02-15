@@ -56,8 +56,9 @@ nodemon app.js
 得到如下输出说明启动成功：
 
 <div align="center">
-    <img src="基于Nodejs-vue3-uniapp的微信小程序全栈开发配置帖/01.png">
+    <img src="pics/01.png">
 </div>
+
 
 
 
@@ -67,10 +68,10 @@ nodemon app.js
 
 注册微信小程序，配置appID和密钥；在阿里云创建智能语音交互项目，并将第三方服务器域名配置在微信小程序的服务器域名配置栏，同时配置图床url：
 
-
 <div align="center">
-    <img src="基于Nodejs-vue3-uniapp的微信小程序全栈开发配置帖/02.png">
+    <img src="pics/02.png">
 </div>
+
 
 
 
@@ -81,13 +82,15 @@ nodemon app.js
 通过uni-app实现跨端，在mainfest.json配置对应的微信小程序appID，选择运行到小程序模拟器-微信开发者工具，自动启动微信开发者工具编译项目。
 
 <div align="center">
-    <img src="基于Nodejs-vue3-uniapp的微信小程序全栈开发配置帖/03.png">
+    <img src="pics/03.png">
 </div>
+
 
 
 <div align="center">
-    <img src="基于Nodejs-vue3-uniapp的微信小程序全栈开发配置帖/04.png">
+    <img src="pics/04.png">
 </div>
+
 
 
 
@@ -98,15 +101,17 @@ nodemon app.js
 
 
 <div align="center">
-    <img src="基于Nodejs-vue3-uniapp的微信小程序全栈开发配置帖/05.png">
+    <img src="pics/05.png">
 </div>
+
 
 
 
 
 <div align="center">
-    <img src="基于Nodejs-vue3-uniapp的微信小程序全栈开发配置帖/06.png">
+    <img src="pics/06.png">
 </div>
+
 
 
 
